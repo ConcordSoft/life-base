@@ -1,0 +1,308 @@
+body,html{
+ height: 100%;
+
+}
+
+.navbar {
+	background-color: red;
+	
+}
+.navbar-brand{
+	margin-top: -13px;
+}
+.navbar-brand img{
+	height: 100px;
+
+}
+ .text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 50px;
+	font-weight: bold;
+
+
+}
+.flex-row .nav-item .nav-link{
+	color: #000;
+	border: 1.5px solid #7f7f7f;
+	margin-left: 5px ; 
+	font-family : "Avenir Black",sans-serif ;
+	font-size: 14px;
+
+
+}
+.flex-row .nav-item .nav-link a{
+	color: red;
+	font-size: 50px;
+	
+
+}
+/*section1*/
+#section1 {
+	background-image: url("/assets/images/1/pic-BW.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+
+   
+}
+.sec1 {
+	padding-top: 208px;
+}
+.sec1 img{
+	display: block;
+	margin: auto;
+	height:140px;
+}
+.sec1 h3{
+	color: #fff;
+	font-size: 150px;
+	padding-top: 60px;
+	font-family: "AGramondPro Regular";
+	text-align: center;
+}
+/*SECTION2*/
+#section2{
+	background-image: url("/assets/images/shine2.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.sec2{
+	padding-top: 200px;
+}
+.sec2 img{
+	
+	height: 140px;
+	display: block;
+	margin: auto;
+	
+}
+.sec2 h3{
+	color: #000;
+	font-family: "AGramondPro Regular";
+	text-align: center;
+	padding-top: 36px;
+	font-size: 150px;
+	padding-bottom: 200px;
+
+
+
+}
+/*section3*/
+#section3{
+	background-color: #fff;
+}
+
+#section3 h3{
+	text-align: center;
+	font-family: "Myriad Pro Regular";
+	
+	font-size: 99px;
+	padding-top: 150px;
+
+}
+#section3 h3 span{	
+	font-weight: bold;
+}
+
+#section3 h3 span{
+    font-weight: bold;
+}
+.sec3 {
+	padding-top: 43px;
+}
+
+.sec3 .l img {
+	display: block;
+	margin: auto;
+	height: 80px;
+	margin-top: -10px;
+}
+.layer img{
+	width: 100%;
+	display: block;
+	margin: auto;
+	padding-top: 74px;
+}
+.layer p{
+	padding-bottom: 150px;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 10px;
+	font-family: "Myriad Pro Regular",sans-serif;
+}
+.layer p span{
+	padding-bottom: 150px;
+	font-weight: bold;
+}
+
+.row .u{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+
+
+}
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 0px;
+}
+.column img{
+	height: 50%;
+}
+.images1{
+	padding: 0px;
+	position: relative;
+
+}
+
+.images1 img{
+	width: 100%;
+	height: 100%;
+}
+.text-img{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+
+}
+.text-img img{
+ width: 40%;
+}
+.text-img h3{
+  color: #fff;
+  padding-top: 60px;
+  font-family: "Avenir Heavy";
+  font-size: 60px;
+  font-weight: bold;
+}
+.text-img h4{
+	color: #fff;
+	font-family: "Avenir Light",sans-serif;
+	font-size: 25px;
+	padding-top: 20px;
+
+}
+.text-img p{
+	color: #fff;
+	font-family: "Avenir Light",sans-serif;
+	font-size: 20px;
+	padding-top: 20px;
+	font-weight: 100px;
+
+}
+.n{top:20%;left:18%;position: absolute;
+	color: white;
+	font-size: 55px;
+	font-family: "Avenir Heavy",sans-serif;
+	font-weight: bold;
+
+}
+.n1{
+	top:65%;left:8%;position: absolute;
+	color: white;
+	font-size: 55px;
+	font-family: "Avenir Heavy",sans-serif;
+	font-weight: bold;
+}
+.n2{
+	top:20%;left:63%;position: absolute;
+	color: white;
+	font-size: 55px;
+	font-family: "Avenir Heavy",sans-serif;
+	font-weight: bold;
+}
+.n3{
+	top:65%;left:63%;position: absolute;
+	color: white;
+	font-size: 55px;
+	font-family: "Avenir Heavy",sans-serif;
+	font-weight: bold;
+}
+
+/*footer*/
+#footer{
+	background-color: #202020;
+	height: 100%;
+}
+.footer-contact img{
+	height: 167px;
+	width: 270px;
+}
+.footer-contact p{
+    font-family: "Myriad Pro Regular";
+    font-size: 47px;
+    padding-top: 147px;
+    color: #565656;
+}
+.footer-contact ul{
+	
+	font-family: "Avenir Heavy",sans-serif;
+	list-style-type: none;
+	font-size: 20px;
+	padding-bottom: 66px;
+	padding-left: 0px;
+	font-weight: bold;
+	padding-top: 128px;
+
+}
+.footer-contact li{
+	display: inline;
+}
+.footer-contact li a{
+	color: #565656;
+	text-decoration: none;
+}
+
+
+
+#footer1 {
+	background-color: black;
+	height: 100%;
+}
+#footer1 .p{
+	font-family: "Myriad Pro Regular",sans-serif;
+	font-size: 15px;
+	padding-top:43px;
+	padding-bottom: 45px;
+	color: #717171;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.social{
+	text-align: right;
+
+}
+.fa{
+	text-decoration: none;
+}
+.fa-facebook {
+	  font-size: 30px;
+	color: #575757;
+	border-radius: 80%;
+	background-color: #000;
+
+
+
+}
+.fa-twitter {
+    font-size: 30px;
+	color: #575757;
+	border-radius: 80%;
+	background-color: #000;
+}
+.fa-envelope {
+	font-size: 30px;
+	color: #575757;
+	border-radius: 80%;
+	background-color: #000
+}

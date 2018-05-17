@@ -1,0 +1,138 @@
+body,html{
+ height: 100%;
+ background-color: #000;
+}
+.navbar {
+	background-color: red;
+	
+}
+.navbar-brand{
+	margin-top: -13px;
+}
+.navbar-brand img{
+	height: 100px;
+
+}
+ .text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 50px;
+	font-weight: bold;
+
+
+}
+.flex-row .nav-item .nav-link{
+	color: #000;
+	border: 1.5px solid #7f7f7f;
+	margin-left: 5px ; 
+
+}
+/*SECTION*/
+#section{
+	background-color: #000;
+}
+.text1{
+	
+    color: #fff;
+    text-align: left;
+}
+.text1 img{
+	height: 95px;
+	position: absolute;
+    top:55%;
+    left: 46.5%;
+}
+.text1 h3{
+	position: absolute;
+    top:75.5%;
+    left: 44.5%;
+    font-size: 58px;
+    font-family : "Avenir Black",sans-serif ;
+    font-weight: bold;
+
+}
+.text1 p{
+	position: absolute;
+    top:85%;
+    left: 39%;
+    font-family : "Avenir Black",sans-serif ;
+    color: #898989;
+    font-size: 18px;
+    text-align: center;
+}
+.text1 a{
+	position: absolute;
+    top:93.5%;
+    left: 41.5%;
+    font-family : "Avenir Black",sans-serif ;
+    color: #898989;
+    font-size: 22px;
+    text-align: center;
+    background-color: #2e2e2e;
+    border-radius: 5px;
+    padding: 15px
+
+
+}
+/*SECTION1*/
+#section1 {
+	background-color: #020609;
+}
+.sec1 {
+	padding-top: 144px;
+
+}
+.sec1  .images-icon img{
+	display: block;
+	margin: auto;
+	height: 50px;
+	
+}
+.text h3{
+	color: #fff;
+	font-family : "Avenir Light",sans-serif ;
+	text-align: center;
+	font-size: 30px;
+
+}
+.text p{
+	color: #fff;
+	font-family : "Avenir Light",sans-serif ;
+	text-align: center;
+	font-size: 15px; 
+
+}
+
+/*SECTION2*/
+#section2{
+	background-color: black;
+	padding-bottom: 171px;
+	margin-top: -32px;
+
+}
+.top-left {
+    position: absolute;
+    top: 300px;
+    left: 85px;
+    color: #fff;
+    text-align: left;
+}
+.top-left h3{
+	font-size: 49px;
+	font-family : "Avenir Black",sans-serif ; 
+	font-weight: bold;
+}
+.top-left p{
+	font-size: 20px;
+	font-family : "Avenir Black",sans-serif ; 
+	
+
+}
+.layer {
+	padding-top: 255px;
+	padding-bottom: 210px;
+	position: relative;
+    text-align: center;
+    color: white;
+
+}
