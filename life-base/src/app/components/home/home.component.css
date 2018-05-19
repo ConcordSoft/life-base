@@ -2,10 +2,7 @@ body,html{
  height: 100%;
 
 }
-.navbar {
-	background-color: red;
-	
-}
+
 .navbar-brand{
 	margin-top: -13px;
 }
@@ -25,6 +22,7 @@ body,html{
 }
  .text-center .nav-item .nav-link:hover{
  	opacity: 1;
+ 	color: black;
  }
 .flex-row .nav-item .nav-link{
 	color: #000;
@@ -32,6 +30,8 @@ body,html{
 	margin-left: 5px ; 
 	font-family : "Avenir Black",sans-serif ;
 	font-size: 14px;
+	padding: 10px;
+
 
 
 }
@@ -267,7 +267,31 @@ opacity: 1;
 	opacity: 1;
 	background-color: black
 }
-@media  (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+	.flex-container .flex-one .flex-one1 {
+	width: 100%;
+}
+ .text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 0px;
+	text-align: left;
+	font-weight: bold;
+	opacity: 0.7;
+	transition: 0.9s;
+
+
+}
+.flex-row .nav-item .nav-link{
+	margin-left: 6px ; 
+	margin-top: 10px;
+	padding: 10px;
+	text-align: left;
+
+
+
+}
+
 	.sec1 h3{
 	color: #fff;
 	font-size: 50px;
@@ -346,19 +370,43 @@ opacity: 1;
 #footer1 .p{
 	text-align: center;
 }
-.flex-container {
-  display: flex;
-  flex-direction: column;
 
- 
+.footer-contact img{
+	height: 150px;
+	display: block;
+	margin: auto;
+	
 }
 
-.flex-container .flex-one {
+.text-position .center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 20px;
 
-  width: 100%;
 
 }
-
+.two {
+	background-position: center;
+}
+.two .n img{
+	padding-top: 35%;
+	width: 30%;
+}
+.two .n h3{
+     padding-top: 30%;
+	font-size:7vw;
+}
+.two .n h4{
+    padding-top: 30%;
+	font-size: 4vw;
+}
+.two .n p{
+	padding-top: 30%;
+	font-size: 3vw;
+}
 
 }
 
@@ -366,6 +414,7 @@ opacity: 1;
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+ 
 
  
 }
@@ -375,9 +424,10 @@ opacity: 1;
   width: 50%;
   
 }
+
 .flex-container .flex-one1  img {
 	width:100%;
-	
+	cursor: pointer;
 }
 .flex-container-1{
 	display: flex;
@@ -390,7 +440,8 @@ opacity: 1;
 
   width: 50%;
   opacity: 0.7;
-    border: 1px solid gray;
+  border: 1px solid gray;
+  transition: all 0.9s;
 
   
 }
@@ -399,6 +450,7 @@ opacity: 1;
  
   opacity: 1;
   transition: all 0.9s;
+
   
 }
 
@@ -448,7 +500,8 @@ opacity: 1;
 	transform: translate(-50%, -50%);
 	color: white;
 	font-size: 60px;
-	font-family: "Avenir";
+	font-family: "Avenir"sans-serif;
+	cursor: pointer;
 
 }
 .center:hover {
@@ -456,4 +509,143 @@ opacity: 1;
 	opacity: 1;
 }
 
+@media(min-width: 768px) and (max-width: 991px){
+.two {
+		padding-top: 3%;
+	}
+	.two .n h3{
+		padding-top: 4%;
+	}
 
+	 .text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 2px;
+	text-align: left;
+	font-weight: bold;
+	opacity: 0.7;
+	transition: 0.9s;
+	font-size: 10px;
+
+}
+.flex-row .nav-item .nav-link{
+	margin-left: 6px ; 
+	padding: 10px;
+	text-align: left;
+	font-size: 10px;
+}
+.navbar-brand img{
+	height: 80px;
+}
+.sec1 h3{
+	font-size: 90px;
+}
+.sec1 img {
+	height: 120px;
+}
+.sec2 h3{
+	font-size: 90px;
+}
+.sec2 img {
+	height: 120px;
+}
+#section3 h3{
+	font-size: 60px;
+}
+.layer-img h4{
+    	font-size: 18px;
+	padding-bottom: 1px;
+	padding-top: 15px;
+	margin-bottom: 15px;
+
+}
+.footer-contact p{
+
+    font-size: 40px;
+    text-align: center;
+   
+
+}
+.footer-contact ul{
+	
+	text-align: center;
+	font-size: 15px;
+
+}
+.social {
+	text-align: center;
+	padding-top: 10px;
+}
+#footer1 .p{
+	text-align: center;
+	font-size: 20px;
+}
+
+.footer-contact img{
+	height: 150px;
+	display: block;
+	margin: auto;
+	
+}
+
+.text-position .center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 30px;
+
+
+}
+}
+@media(min-width: 991px) and (max-width: 1200px){
+	.two {
+		padding-top: 3%;
+	}
+ .text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 5px;
+	text-align: left;
+	font-weight: bold;
+	opacity: 0.7;
+	transition: 0.9s;
+	
+
+}
+.flex-row .nav-item .nav-link{
+	margin-left: 6px ; 
+	padding: 10px;
+	text-align: left;
+
+}
+.sec1 h3{
+	font-size: 120px;
+}
+.sec2 h3{
+	font-size: 120px;
+}
+#section3 h3{
+	font-size: 80px;
+}
+.footer-contact img{
+	height: 150px;
+	
+	
+}
+.footer-contact p{
+
+    font-size: 50px;
+   
+   
+
+}
+.layer-img h4{
+    	font-size: 30px;
+	padding-bottom: 50px;
+	padding-top: 15px;
+	
+
+}
+}

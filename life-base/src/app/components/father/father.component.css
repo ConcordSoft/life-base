@@ -2,10 +2,7 @@ body,html{
  height: 100%;
  background-color: #000;
 }
-.navbar {
-	background-color: red;
-	
-}
+
 .navbar-brand{
 	margin-top: -13px;
 }
@@ -18,15 +15,23 @@ body,html{
 	font-family : "Avenir Black",sans-serif ;
 	padding-left: 50px;
 	font-weight: bold;
+	opacity: 0.7;
+	transition: 0.9s;
 
 
 }
+ .text-center .nav-item .nav-link:hover{
+ 	opacity: 1;
+ 	color: black;
+ }
 .flex-row .nav-item .nav-link{
 	color: #000;
 	border: 1.5px solid #7f7f7f;
 	margin-left: 5px ; 
 	font-family : "Avenir Black",sans-serif ;
 	font-size: 14px;
+	padding: 10px;
+
 
 
 }
@@ -36,13 +41,12 @@ body,html{
 	
 
 }
-
 /*SECTION*/
 #section{
   background-color: black;
 }
 .section-1 {
-	background-image: url("/assets/images/father/image77.jpg");
+	background-image: url("/assets/images/father/image71.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -56,7 +60,7 @@ body,html{
 	height: 120px;
 	padding-left:44.7%;
 	opacity: 0.9;
-	
+
 }
 .section-1 img:hover {
 	opacity: 1;
@@ -160,7 +164,7 @@ body,html{
 .top-left p{
 	font-size: 25px;
 }
-/*END*/
+
 
 /*section3*/
 #section3{
@@ -193,25 +197,35 @@ body,html{
 }
 
 .grid {
-	padding-top: 74px;
+	margin-top: 74px;
+
 }
 .grid-image img {
 	display: block;
 	margin: auto;
-	padding-bottom: 60px;
-	opacity: 0.6;
-	transition: all 0.8s;
+	margin-bottom: 60px;
+	opacity: 0.7;
+	transition: all 0.9s;
+	cursor: pointer;
 
 }
 .grid-image img:hover {
 	opacity: 1;
+	transition: all 0.9s;
 }
 .grid-image-text img{
 	top: 80px;
 	position: absolute;
 	left: 100px;
-	height: 100px
+	height: 50px;
+	transition: all 0.9s;
+	opacity: 1;
+	cursor: pointer;
 
+}
+.grid-image-text img:hover{
+	opacity: 1;
+	transition: all 0.9s;
 }
 
 .grid-image-text  p{
@@ -222,19 +236,26 @@ body,html{
 	font-size: 40px;
 	font-family: "Avenir";
 	font-weight: bold;
+	opacity: 1;
+	transition: all 0.9s;
+	cursor: pointer;
 	
 }
-
+.grid-image-text  p:hover{
+	transition:  all 0.9s;
+	opacity: 1;
+}
 #flip {
 
     text-align: center;
     color: #fff;
     background-color: #202020;
     cursor: pointer;  
+   
 }
 
 #panel {
-    padding-top: 15px;
+     margin-top: 15px;
     display: none;
     background-color: black;
 }
@@ -247,6 +268,7 @@ body,html{
     cursor: pointer;
  
 }
+/*END*/
 /*footer*/
 #footer{
 	background-color: #202020;
@@ -366,6 +388,8 @@ opacity: 1;
 }
 /*END*/
 
+
+
 /*section4*/
 #section4{
    background-color: black;
@@ -457,11 +481,38 @@ opacity: 1;
 /*end*/
 @media  (max-width: 768px) {
 /*section*/
-.section-1 img {
-	height: 80px;
-	padding-left:44.7%;	
-}
+.text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 0px;
+	text-align: left;
+	font-weight: bold;
+	opacity: 0.7;
+	transition: 0.9s;
 
+
+}
+.flex-row .nav-item .nav-link{
+	margin-left: 6px ; 
+	margin-top: 10px;
+	padding: 10px;
+	text-align: left;
+
+
+
+}
+.section-1 {
+	padding-top: 310px;
+}
+.section-1 img {
+	display: block;
+	margin: auto;
+	height: 100px;
+	padding-left: 0px;	
+}
+.section-1 h3 {
+	font-size: 40px;
+}
 .section-1 p {
 	font-size: 15px;
 }
@@ -472,6 +523,26 @@ opacity: 1;
    
 }
 /*end*/
+.sec1  .images-icon img{
+	display: block;
+	margin: auto;
+	height: 80px;
+	
+	
+}
+
+.text h3{
+	
+	font-size: 30px;
+
+}
+.text p{
+	color: #fff;
+	font-family : "Avenir" ;
+	text-align: center;
+	font-size: 12px; 
+
+}
 /*section2*/
 .layer {
     background-position: center;
@@ -512,12 +583,12 @@ opacity: 1;
 	top: 20px;
 	position: absolute;
 	left: 50px;
-	height: 100px
+	height: 30px
 
 }
 
 .grid-image-text  p{
-	top:100px;
+	top:60px;
 	left:50px;
 	font-size: 25px;
 	
@@ -622,5 +693,184 @@ opacity: 1;
     background-color: #202020;
    
 }
+.footer-contact img{
+	height: 120px;
+	margin: auto;
+	display: block;
+	
+	
+}
 /*end*/
+}
+@media(min-width: 768px) and (max-width: 991px){
+		 .text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 2px;
+	text-align: left;
+	font-weight: bold;
+	opacity: 0.7;
+	transition: 0.9s;
+	font-size: 10px;
+
+}
+.flex-row .nav-item .nav-link{
+	margin-left: 6px ; 
+	padding: 10px;
+	text-align: left;
+	font-size: 10px;
+}
+.navbar-brand img{
+	height: 80px;
+}
+.footer-contact img{
+	height: 150px;
+	margin: auto;
+	display: block;
+	
+	
+}
+.footer-contact p{
+
+    font-size: 40px;
+    text-align: center;
+   
+
+}
+#footer1 .p{
+	text-align: center;
+	font-size: 20px;
+}
+.social{
+	text-align: center;
+}
+.grid-image-text img{
+	top: 50px;
+	position: absolute;
+	left: 50px;
+	height: 40px
+
+}
+
+.grid-image-text  p{
+	top:100px;
+	left:50px;
+	font-size: 25px;
+	
+}
+.section-1 img {
+	height: 120px;
+	padding-left:42%;
+	opacity: 0.9;
+
+}
+.section-1 a{
+  margin-left: 34%;
+}
+}
+@media(min-width: 768px) and (max-width: 991px){
+		 .text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 2px;
+	text-align: left;
+	font-weight: bold;
+	opacity: 0.7;
+	transition: 0.9s;
+	font-size: 10px;
+
+}
+.flex-row .nav-item .nav-link{
+	margin-left: 6px ; 
+	padding: 10px;
+	text-align: left;
+	font-size: 10px;
+}
+.navbar-brand img{
+	height: 80px;
+}
+.footer-contact img{
+	height: 150px;
+	margin: auto;
+	display: block;
+	
+	
+}
+.footer-contact p{
+
+    font-size: 40px;
+    text-align: center;
+   
+
+}
+#footer1 .p{
+	text-align: center;
+	font-size: 20px;
+}
+.social{
+	text-align: center;
+}
+.grid-image-text img{
+	top: 50px;
+	position: absolute;
+	left: 50px;
+	height: 40px
+
+}
+
+.grid-image-text  p{
+	top:100px;
+	left:50px;
+	font-size: 25px;
+	
+}
+.section-1 img {
+	height: 120px;
+	padding-left:42%;
+	opacity: 0.9;
+
+}
+.section-1 a{
+  margin-left: 34%;
+}
+}
+@media(min-width: 991px) and (max-width: 1200px){
+	 .text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 5px;
+	text-align: left;
+	font-weight: bold;
+	opacity: 0.7;
+	transition: 0.9s;
+	
+
+}
+.flex-row .nav-item .nav-link{
+	margin-left: 6px ; 
+	padding: 10px;
+	text-align: left;
+
+}
+.footer-contact img{
+	height: 150px;
+	
+	
+}
+.footer-contact p{
+
+    font-size: 50px;
+   
+   
+
+}
+.section-1 img {
+	height: 120px;
+	padding-left:43%;
+	opacity: 0.9;
+
+}
+.section-1 a{
+  margin-left: 37.5%;
+}
 }
