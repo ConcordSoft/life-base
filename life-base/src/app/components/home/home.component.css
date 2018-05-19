@@ -1,0 +1,459 @@
+body,html{
+ height: 100%;
+
+}
+.navbar {
+	background-color: red;
+	
+}
+.navbar-brand{
+	margin-top: -13px;
+}
+.navbar-brand img{
+	height: 100px;
+
+}
+ .text-center .nav-item .nav-link{
+	color: #5e5e5e;
+	font-family : "Avenir Black",sans-serif ;
+	padding-left: 50px;
+	font-weight: bold;
+	opacity: 0.7;
+	transition: 0.9s;
+
+
+}
+ .text-center .nav-item .nav-link:hover{
+ 	opacity: 1;
+ }
+.flex-row .nav-item .nav-link{
+	color: #000;
+	border: 1.5px solid #7f7f7f;
+	margin-left: 5px ; 
+	font-family : "Avenir Black",sans-serif ;
+	font-size: 14px;
+
+
+}
+.flex-row .nav-item .nav-link a{
+	color: red;
+	font-size: 50px;
+	
+
+}
+/*section1*/
+#section1 {
+	background-image: url("/assets/images/1/pic-BW.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;  
+}
+.sec1 {
+	padding-top: 208px;
+	padding-bottom: 300px;
+}
+.sec1 img{
+	display: block;
+	margin: auto;
+	height:175px;
+	opacity: 0.9;
+    
+}
+.sec1 h3{
+	color: #fff;
+	font-size: 150px;
+	padding-top: 60px;
+	font-family: "AGramondPro Regular";
+	text-align: center;
+
+}
+/*SECTION2*/
+#section2{
+	background-image: url("/assets/images/shine21.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec2{
+	padding-top: 200px;
+}
+.sec2 img{
+	height:175px;
+	display: block;
+	margin: auto;
+	opacity: 0.9;
+}
+.sec2 h3{
+	color: #000;
+	font-family: "AGramondPro Regular";
+	text-align: center;
+	padding-top: 36px;
+	font-size: 150px;
+	padding-bottom: 200px;
+	
+}
+.sec2 h3 span{
+	padding-left: 150px;
+	
+}
+/*section3*/
+#section3{
+	background-color: #fff;
+}
+
+.text-sec3 h3{
+	text-align: center;
+	font-size: 99px;
+	padding-top: 100px;
+	padding-bottom: 43px;
+	font-family: "Avenir";
+	
+
+}
+.text-sec3 h3 span{	
+    font-weight: bold;
+	font-family: "Avenir";
+}
+
+#section3 h3 span{
+    font-weight: bold;
+}
+.sec3 {
+	padding-top: 43px;
+}
+
+.sec3 .sec3-middle img {
+	display: block;
+	margin: auto;
+	height: 80px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: -25px;
+
+}
+.layer-img {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.layer-img img{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 74px;
+}
+.layer-img h4{
+	padding-bottom: 150px;
+	text-align: center;
+	font-size: 40px;
+	padding-top: 10px;
+	font-family: "Avenir";
+	padding-bottom: 150px;
+}
+
+
+/*footer*/
+#footer{
+	background-color: #202020;
+	height: 100%;
+}
+.footer-contact img{
+	height: 200px;
+	opacity: 0.6;
+	transition: all 0.8s;
+	
+}
+.footer-contact img:hover{
+opacity: 1;
+}
+.footer-contact p{
+    font-family: "Myriad Pro Regular";
+    font-size: 57px;
+    padding-top: 174px;
+    color: #565656;
+
+}
+.footer-contact ul{
+	
+	font-family: "Avenir Heavy",sans-serif;
+	list-style-type: none;
+	font-size: 20px;
+	padding-bottom: 66px;
+	padding-left: 0px;
+	font-weight: bold;
+	padding-top: 118px;
+
+}
+.footer-contact li{
+	display: inline;
+}
+.footer-contact li a{
+	color: #565656;
+	text-decoration: none;
+	opacity: 0.6;
+	transition: 0.8s;
+}
+.footer-contact li a:hover{
+	opacity: 1;
+	color: white;
+}
+
+
+
+#footer1 {
+	background-color: black;
+	height: 100%;
+}
+#footer1 .p{
+	font-family: "Myriad Pro Regular",sans-serif;
+	font-size: 15px;
+	padding-top:73px;
+	padding-bottom: 73px;
+	color: #717171;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.social{
+	text-align: right;
+
+
+}
+.fa{
+
+  padding: 6px; 
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 25px; 
+  opacity: 0.6;
+  transition: 0.8s;
+  margin-right: 10px;
+}
+.fa:hover{
+	opacity: 1;
+	color: black;
+	background-color: white;
+}
+.fa-facebook {
+	 
+	color: black;
+	background-color: #575757;
+
+
+
+}
+.fa-twitter {
+    font-size: 32px;
+	color: #575757;
+	
+	background-color: #000;
+
+}
+.fa-envelope-o {
+	font-size: 32px;
+	color: #575757;
+	
+	background-color: #000
+}
+.fa-envelope-o:hover {
+	color: white;
+	opacity: 1;
+	background-color: black;
+}
+.fa-twitter:hover {
+		color: white;
+	opacity: 1;
+	background-color: black
+}
+@media  (max-width: 768px) {
+	.sec1 h3{
+	color: #fff;
+	font-size: 50px;
+	padding-top: 60px;
+	font-family: "AGramondPro Regular";
+	text-align: center;
+}
+.sec2 h3{
+	color: #000;
+	font-family: "AGramondPro Regular";
+	text-align: center;
+	padding-top: 36px;
+	font-size: 50px;
+	padding-bottom: 200px;
+}
+.sec2 h3 span{
+   padding-left: 20px;
+}
+#section3 h3{
+	text-align: center;
+	font-family: "Avenir";
+	
+	font-size:50px;
+	padding-top: 150px;
+
+}
+.layer-img {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.layer-img img{
+	width: 80%;
+	padding-top: 20px;
+	
+
+}
+.layer-img h4{
+    	font-size: 20px;
+	padding-bottom: 1px;
+	padding-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+.text-img{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+
+}
+
+.sec3 .sec3-middle img {
+	padding-left: 20%;
+	padding-right: 10px;
+	height: 50px;
+}
+
+/*foooter*/
+.footer-contact p{
+
+    font-size: 40px;
+    text-align: center;
+   
+
+}
+.footer-contact ul{
+	
+	text-align: center;
+	font-size: 15px;
+
+}
+.social {
+	text-align: center;
+	padding-top: 10px;
+}
+#footer1 .p{
+	text-align: center;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+
+ 
+}
+
+.flex-container .flex-one {
+
+  width: 100%;
+
+}
+
+
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+ 
+}
+
+.flex-container .flex-one {
+
+  width: 50%;
+  
+}
+.flex-container .flex-one1  img {
+	width:100%;
+	
+}
+.flex-container-1{
+	display: flex;
+  flex-wrap: wrap;
+
+
+
+}
+.flex-container-1 .flex-one1 {
+
+  width: 50%;
+  opacity: 0.7;
+    border: 1px solid gray;
+
+  
+}
+.flex-container-1 .flex-one1:hover {
+
+ 
+  opacity: 1;
+  transition: all 0.9s;
+  
+}
+
+.two {
+	background-image: url("/assets/images/what is a man/images1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-left: 3.5vw;
+
+}
+
+.two >div img {
+	width: 20%;
+}
+
+.two > div h3{
+  color: #fff;
+  padding-top: 50px;
+  font-family: "Avenir";
+  font-size: 4.5vw;
+  font-weight: bold;
+}
+.two > div h4{
+	color: #fff;
+	font-family: "Avenir",sans-serif;
+	font-size: 1.9vw;
+	padding-top: 18px;
+}
+.two div > p{
+	color: #fff;
+	font-family: "Avenir",sans-serif;
+	font-size: 1.6vw;
+	padding-top: 45px;
+}
+.text-position {
+	position: relative;
+	text-align: center;
+
+}
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 60px;
+	font-family: "Avenir";
+
+}
+.center:hover {
+	
+	opacity: 1;
+}
+
+
