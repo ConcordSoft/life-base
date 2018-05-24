@@ -12,15 +12,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#section3">ABOUT LIFE BASE</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#section3">COURSES</a> 
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"  href="#footer" >CONTACT US</a> 
-            </li>
-            <li class="nav-item dropdown">
+             <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         MENU
+         COURSES
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" routerLink="/Child">Child</a>
@@ -30,10 +24,14 @@
           
         </div>
       </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="#footer" >CONTACT US</a> 
+            </li>
+           
         </ul>
         <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
             <li class="nav-item">
-                <a class="nav-link" href="">LOGIN</a>
+                <a class="nav-link"  data-toggle="modal" data-target="#popUpWindow">LOGIN</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="" style="background-color: #2a2a2a;color: #fff;border-color: #2a2a2a">REGISTER</a>
@@ -57,7 +55,7 @@
     <div class="container">
         <div class="sec2">
              <img src="/assets/images/2/logo.png">
-             <h3>Principals <br><span>to live by...</span></h3>
+             <h3>Principles <br><span>to live by...</span></h3>
         </div>
     </div>
 </div> 
@@ -82,7 +80,7 @@
     <div class="row  layer-img">
         <div class="col-12 col-md-4">
             <img src="/assets/images/3/Layer-7.jpg" title="Prirest">
-            <h4><b>Prirest</b><br>of your home</h4>
+            <h4><b>Priest</b><br>of your home</h4>
         </div>
         
         <div class="col-12 col-md-4">
@@ -100,31 +98,31 @@
 
 
 
-<div class="flex-container flex-container1">
-  <div class="flex-one flex-one5">
+<div class="flex-container">
+  <div class="flex-one">
    <div class="flex-container-1">
     <div class="flex-one1">
         <div class="text-position">
-        <img src="/assets/images/courses/image3.jpg">
-        <div class="center">Chlid</div>
+        <img src="/assets/images/courses/Layer-11-copy.jpg">
+        <div class="center"><a routerLink="/Child">Chlid</a></div>
         </div>
     </div>
       <div class="flex-one1">
         <div class="text-position">
-        <img src="/assets/images/courses/image2.jpg" height="100%">
-        <div class="center">Son</div>
+        <img src="/assets/images/courses/image12.jpg">
+        <div class="center"><a  routerLink="/Son">Son</a></div>
         </div>
     </div>
     <div class="flex-one1">
         <div class="text-position">
         <img src="/assets/images/courses/image3.jpg">
-        <div class="center">Husband</div>
+        <div class="center"><a routerLink="/Husband">Husband</a></div>
         </div>
     </div>
     <div class="flex-one1">
         <div class="text-position">
         <img src="/assets/images/courses/image4.jpg">
-        <div class="center">Father</div>
+        <div class="center"><a routerLink="/Father">Father</a></div>
         </div>
 
     </div>
@@ -148,10 +146,10 @@
     <img src="/assets/images/footer/logo2.png" alt="logo" title="Life Base">
     <p>99 99999 99 99</p>
     <ul>
-        <li><a href=""> HOME&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
-        <li><a href=""> ABOUT LIFE BASE&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
-        <li><a href=""> COURSES&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
-        <li><a href=""> CONTACT US</a></li>
+        <li><a href="#"> HOME&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a href="#section3"> ABOUT LIFE BASE&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a href="#"> COURSES&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a href="#footer"> CONTACT US</a></li>
 
 
 
@@ -163,7 +161,7 @@
     <div class="container">
         <div class="row p">
             <div class="col-12 col-md-12 col-lg-6">
-             <p>LIFE BASE © COPYRIGHT 2016</p>
+             <p>LIFE BASE©COPYRIGHT 2016</p>
             </div>
             <div class="col-12 col-md-12 col-lg-6">
             <div class="social">
@@ -172,7 +170,193 @@
                 <a href="" class="fa fa-envelope-o"></a>
             </div>
             </div>
+            <div class="col-md-4 col-12 model-pay">
+       <br>
+                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal2">
+  ALL-ACCESS PASS
+</button>
+
+
+            </div>
         </div>
     </div>
 </div>
 
+  
+  <div class="modal fade" id="popUpWindow">
+    <div class="modal-dialog">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-content login">
+
+        <h1>LOGIN</h1><br>
+        <form>
+  <div class="form-group">
+     <a href="#" class="fb btn">
+          <i class="fa fa-facebook-official"></i> <h3>Continue with Facebook</h3>
+         </a>
+    <div class="or">
+    <h2><span>OR</span></h2>
+</div>
+<div class="form-group">
+     <input type="fn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
+</div>
+  <div class="form-group">
+    <input type="ln" class="form-control" id="exampleInputPassword1" placeholder="Last name">
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email address">
+  </div>
+</div>
+
+  <div class="row">
+   <div class="col-md-6 pass">
+   <h3>Forgot your password?</h3><br>
+   </div>
+   <div class="col-md-6">
+    <button type="submit" class="btn"><h5>LOGIN</h5></button>
+   </div>
+  </div>
+ <hr style="background-color: #3b3b3b;margin-top: 51px;">
+  <hr style="background-color: #3b3b3b;">
+  <div class="account">
+  <h4>Need an account? <span>Create an account.</span></h4>
+   </div>
+</form>
+    
+        
+      </div>
+    </div>
+  </div>
+
+   <div class="modal fade" id="popUpWindow4">
+    <div class="modal-dialog">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-content login">
+
+        <h1>LOGIN</h1><br>
+
+        <form>
+  <div class="form-group">
+     <hr style="background-color: #3b3b3b;">
+    <input type="fn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
+
+  <div class="form-group">
+    <input type="ln" class="form-control" id="exampleInputPassword1" placeholder="Last name">
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email address">
+  </div>
+    </div>
+  <div class="row">
+   <div class="col-md-6 pass">
+   <h3>Forgot your password?</h3><br>
+   </div>
+   <div class="col-md-6">
+    <button type="submit" class="btn"><h5>LOGIN</h5></button>
+   </div>
+  </div>
+ <hr style="background-color: #3b3b3b;margin-top: 51px;">
+  <hr style="background-color: #3b3b3b;">
+  <div class="account">
+  <h4>Need an account? <span>Create an account.</span></h4>
+   </div>
+</form>
+    
+        
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content form-pay">
+      <div class="modal-body form1-text">
+        <div class="row header1">
+          <div class="col-md-9 col-10">
+            <h5>All ACCESS PASS<br>
+        <span>ANNUAL SUBSCRIPTION ($180 YAR)</span> </h5>
+          </div>
+          <div class="col-md-3 col-2">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          </div>
+        </div>
+         <hr style="background-color: #3b3b3b;margin-bottom: 0px;margin-top: 0px">
+  <hr style="background-color: #3b3b3b;margin-top: 10px;">
+     <div class="card-icon">
+      <a href="#"><img src="/assets/images/visa.png"></a>&nbsp;&nbsp;
+      <a href="#"><img src="/assets/images/master.png"></a>&nbsp;&nbsp;
+      <a href="#"><img src="/assets/images/amex.png"></a>&nbsp;&nbsp;
+      <a href="#"><img src="/assets/images/card1.png"></a>&nbsp;
+        </div>
+    <hr style="background-color: #3b3b3b;">
+
+        <div class="row">
+        <div class="col-md-8 col-9">
+         <label class="con">&nbsp;<img src="/assets/images/visa.png">&nbsp;&nbsp;&nbsp;&nbsp;XXXX 9565
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+          </label>
+          </div>
+          <div class="col-md-4 col-3 text-5">
+          <p>4/5&nbsp;&nbsp;<span aria-hidden="true">&times;</span></p>
+        </div>
+        <div class="col-md-12 col-12">
+            <hr style="background-color: #3b3b3b;margin-top: 0px;">
+        </div>
+        <div class="col-md-12 col-12">
+         <label class="con">&nbsp;New card
+         <input type="radio" name="radio">
+        <span class="checkmark"></span>
+        </label>
+          <hr style="background-color: #3b3b3b;">
+      </div>
+      </div>
+      <p class="text-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span>Lorem</span> Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has<br></p>
+      <div class="button1">
+      <button type="button" class="btn"><h4>COMPLETE OREDER</h4></button>
+    </div>
+      <div class="row">
+    <div class="col-md-6 col-12 left-text">
+       <a href="#"><i class="fa fa-lock">&nbsp;&nbsp;</i>Secure with SSL</a>
+        </div>
+         <div class="col-md-6 col-12 left-text">
+      <a href="#">Satisfaction Guaranteed</a>
+        </div>
+    <div class="col-md-8 col-12">
+
+<form>
+  <div class="form-group fm">
+ 
+    <input type="code" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Gift code">
+  </div>
+</form>
+    </div>
+    <div class="col-md-4 col-12 button2">
+      <button type="button" class="btn btn-dark"><h4>APPLY</h4></button>
+    </div>
+  </div>
+   <hr style="background-color: #3b3b3b;margin-bottom: 0px">
+    <hr style="background-color: #3b3b3b;margin-top: 8px;">
+     <div class="row">
+          <div class="col-md-6 col-12 left-footer">
+            <h2><span>100%</span><br>Guaranteed</h2 >
+          
+            <p>Lorem Ipsum is simply dummy <br>the printing and typesetting <br>Lorem Ipsum has been</p>
+          </div>
+          <div class="col-md-6 col-12 phone">
+           <button type="button" class="btn"><h5><i class="fa fa-lock"></i> &nbsp;| &nbsp;Secure with SSL</h5></button>
+            <p >Have a question?<br><span>1-999-999-9999</span></p>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>

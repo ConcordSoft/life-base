@@ -12,38 +12,53 @@ export class HusbandComponent implements OnInit {
  ngOnInit() {
     $(document).ready(function(){
     $("#flip").click(function(){
-        $("#panel").slideToggle("slow");
-        $("#show2").slideToggle("slow");
-         $("#flip").fadeOut("slow");
+        $("#panel").slideToggle(1500);
+        $("#show2").slideToggle(3000);
+         $("#flip").fadeOut();
 
     });
 });
 $(document).ready(function(){
     $("#show").click(function(){
-        $("#panel1").slideToggle("slow");
-        $("#show1").slideToggle("slow");
-        $("#show").fadeOut("slow");
+        $("#panel1").slideToggle(1500);
+        $("#show1").slideToggle(3000);
+        $("#show").fadeOut();
 
     });
 });
 $(document).ready(function(){
     $("#show1").click(function(){
-        $("#panel1").fadeOut("slow");
-        $("#show1").fadeOut("slow");
-        $("#show").fadeIn("slow");
+        $("#panel1").fadeOut(1000);
+        $("#show1").fadeOut();
+        $("#show").fadeIn(9000);
        
 
     });
 });
 $(document).ready(function(){
     $("#show2").click(function(){
-        $("#panel").fadeOut("slow");
-        $("#show2").fadeOut("slow");
-        $("#flip").fadeIn("slow");
+        $("#panel").fadeOut(1000);
+        $("#show2").fadeOut();
+        $("#flip").fadeIn(9000);
        
 
     });
 });
+ autoPlayYouTubeModal();
+
+  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+  function autoPlayYouTubeModal() {
+      var trigger = $("body").find('[data-toggle="modal"]');
+      trigger.click(function () {
+          var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-theVideo"),
+              videoSRCauto = videoSRC + "?autoplay=1";
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function () {
+              $(theModal + ' iframe').attr('src', videoSRC);
+          });
+      });
+  }
   }
  
 

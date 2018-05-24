@@ -32,15 +32,16 @@ body,html{
 	font-family : "Avenir Black",sans-serif ;
 	font-size: 14px;
 	padding: 10px;
+	cursor: pointer;
+opacity: 0.6;
+	transition: all 0.9s;
 
 
 
 }
-.flex-row .nav-item .nav-link a{
-	color: red;
-	font-size: 50px;
-	
-
+.flex-row .nav-item .nav-link:hover{
+	opacity: 1;
+	transition: all 0.9s;
 }
 /*SECTION*/
 #section{
@@ -57,17 +58,19 @@ body,html{
 .section-1 {
 	padding-top: 380px;
 }
-.section-1 img {
+.video a img {
 	height: 120px;
-	padding-left:44.7%;
-	opacity: 0.9;
-
+	display: block;
+	margin: auto;
+	opacity: 0.7;
+	transition: all 0.9s;
 }
-.section-1 img:hover {
+.video a img:hover {
 	opacity: 1;
+	transition: all 0.9s;
 }
 .section-1 h3 {
-	font-family: "Avenir";
+	font-family: "Avenir",sans-serif;
 	color: #fff;
 	font-weight: bold;
 	text-align: center;
@@ -77,15 +80,15 @@ body,html{
 .section-1 p {
 	text-align: center;
 	color: #898989;
-	font-family: "Avenir";
+	font-family: "Avenir",sans-serif;
 	font-size: 20px;
 	padding-bottom: 20px;
 
 }
-.section-1 a{
+.all-full a{
 
     margin-left: 40%;
-    font-family : "Avenir Roman",sans-serif ;
+    font-family : "Avenir",sans-serif ;
     color: #898989;
     font-size: 20px;
     background-color: #2e2e2e;
@@ -93,12 +96,14 @@ body,html{
     padding: 15px;
     text-decoration: none;
     opacity: 0.6;
-    transition: all 0.8s;
+    transition: all 0.9s;
 }
-.section-1 a:hover{
+.all-full a:hover{
 	opacity: 1;
 	color: white;
+	transition: all 0.9s;
 }
+
 /*end*/
 /*SECTION1*/
 #section1 {
@@ -115,22 +120,23 @@ body,html{
 	margin: auto;
 	height: 100px;
 	opacity: 0.5;
-	transition: 0.8s;
+	transition: 0.9s;
 	
 }
 .sec1  .images-icon img:hover{
 	opacity: 1;
+	transition: all 0.9s;
 }
 .text h3{
 	color: #fff;
-	font-family : "Avenir" ;
+	font-family : "Avenir Light",sans-serif ;
 	text-align: center;
 	font-size: 40px;
 
 }
 .text p{
 	color: #fff;
-	font-family : "Avenir" ;
+	font-family : "Avenir Light",sans-serif ;
 	text-align: center;
 	font-size: 15px; 
 
@@ -158,12 +164,15 @@ body,html{
 	color: white;
 	padding-left: 80px;
 	padding-bottom: 80px;
+
 }
 .top-left h3{
 	font-size: 40px;
+	font-family: "Avenir Black",sans-serif;
 }
 .top-left p{
 	font-size: 25px;
+	font-family: "Avenir Light",sans-serif;
 }
 
 
@@ -176,7 +185,7 @@ body,html{
 
 #section3 h3{
 	text-align: center;
-	font-family: "Avenir";
+	font-family: "Avenir Heavy",sans-serif;
 	color: #fff;
 	font-size: 99px;
 	padding-top:75px;
@@ -195,8 +204,13 @@ body,html{
 	padding-left: 40px;
 	padding-right: 40px;
 	margin-top: -25px;
+	opacity: 0.6;
+	transition: all 0.9s;
 }
-
+.sec3 .sec3-middle img:hover {
+	opacity: 1;
+	transition: all 0.9s;
+}
 .grid {
 	margin-top: 74px;
 
@@ -205,29 +219,24 @@ body,html{
 	display: block;
 	margin: auto;
 	margin-bottom: 60px;
-	opacity: 0.7;
-	transition: all 0.9s;
+	opacity: 0.9;
+	transition: all 0.5s;
 	cursor: pointer;
 
 }
 .grid-image img:hover {
 	opacity: 1;
-	transition: all 0.9s;
+
 }
 .grid-image-text img{
 	top: 80px;
 	position: absolute;
 	left: 100px;
 	height: 50px;
-	transition: all 0.9s;
-	opacity: 1;
 	cursor: pointer;
 
 }
-.grid-image-text img:hover{
-	opacity: 1;
-	transition: all 0.9s;
-}
+
 
 .grid-image-text  p{
 	top:140px;
@@ -235,24 +244,17 @@ body,html{
 	position: absolute;
 	color: white;
 	font-size: 40px;
-	font-family: "Avenir";
+	font-family: "Avenir",sans-serif;
 	font-weight: bold;
-	opacity: 1;
-	transition: all 0.9s;
 	cursor: pointer;
 	
-}
-.grid-image-text  p:hover{
-	transition:  all 0.9s;
-	opacity: 1;
 }
 #flip {
 
     text-align: center;
     color: #fff;
     background-color: #202020;
-    cursor: pointer;  
-   
+    cursor: pointer; 
 }
 
 #panel {
@@ -322,6 +324,7 @@ opacity: 1;
 #footer1 {
 	background-color: black;
 	height: 100%;
+	margin-top: -20px;
 
 }
 #footer1 .p{
@@ -338,7 +341,7 @@ opacity: 1;
 
 
 }
-.fa{
+.social .fa{
 
   padding: 6px; 
   width: 35px;
@@ -351,7 +354,7 @@ opacity: 1;
   transition: 0.8s;
   margin-right: 10px;
 }
-.fa:hover{
+ .fa:hover{
 	opacity: 1;
 	color: black;
 	background-color: white;
@@ -481,11 +484,48 @@ opacity: 1;
 }
 /*end*/
 @media  (max-width: 768px) {
+	.modal-content .form1-text {
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 20px;
+}
 /*section*/
-.text-center .nav-item .nav-link{
-	color: #5e5e5e;
-	font-family : "Avenir Black",sans-serif ;
+#videoModal .w .q .close {
+  right:-30px;
+ 
+}
+#videoModal .w{
+      max-width: 80%;
+      margin: 50px auto;
+
+  }
+.modal-dialog  .v .fb{
+	width: 100%;
+}
+.modal-dialog  .v .fb  h3{
+	text-align: center;
+	font-family: "Avenir"sans-serif;
+	font-size: 16px;
+	padding-top: 8px;
+
+}
+.modal-dialog  .v .fb .fa-facebook-official{
+	font-size:30px;
+	text-align: left;
+	float: left;
+}
+	.modal-dialog  .v{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+	.flex-container .flex-one .flex-one1 {
+	width: 100%;
+}
+ .text-center .nav-item .nav-link{
+
 	padding-left: 0px;
+	padding-top: 10px;
+	margin-top: 10px;
 	text-align: left;
 	font-weight: bold;
 	opacity: 0.7;
@@ -502,20 +542,23 @@ opacity: 1;
 
 
 }
+.navbar-brand img{
+	height: 70px;
+}
 .section-1 {
 	padding-top: 310px;
 }
-.section-1 img {
+.video a img {
 	display: block;
 	margin: auto;
 	height: 100px;
-	padding-left: 0px;	
+	
 }
 
 .section-1 p {
 	font-size: 15px;
 }
-.section-1 a{
+.all-full a{
     margin-left: 22vw;
     font-size: 15px;
 
@@ -599,10 +642,13 @@ opacity: 1;
 /*footer*/
 .footer-contact p{
     font-size:40px;
+    padding-top: 80px;
+    text-align: center;
 }
 .footer-contact ul{
-	font-size: 18px;
-	
+	font-size: 8px;
+	padding-top: 50PX;
+	text-align: center;
 
 }
 
@@ -705,6 +751,10 @@ opacity: 1;
 /*end*/
 }
 @media(min-width: 768px) and (max-width: 991px){
+	.modal-dialog .modal-content{
+	padding-left: 10px;
+	padding-right: 10px;
+}
 		 .text-center .nav-item .nav-link{
 	color: #5e5e5e;
 	font-family : "Avenir Black",sans-serif ;
@@ -731,6 +781,12 @@ opacity: 1;
 	display: block;
 	
 	
+}
+.sec1 h3{
+	font-size:30px;
+}
+.sec1 p{
+	font-size:15px;
 }
 .footer-contact p{
 
@@ -760,14 +816,12 @@ opacity: 1;
 	font-size: 25px;
 	
 }
-.section-1 img {
-	height: 120px;
-	padding-left:42%;
-	opacity: 0.9;
 
-}
 .section-1 a{
   margin-left: 34%;
+}
+.footer-contact ul{
+	text-align: center;
 }
 }
 
@@ -780,6 +834,7 @@ opacity: 1;
 	font-weight: bold;
 	opacity: 0.7;
 	transition: 0.9s;
+	font-size: 12px;
 	
 
 }
@@ -801,13 +856,457 @@ opacity: 1;
    
 
 }
-.section-1 img {
-	height: 120px;
-	padding-left:43%;
-	opacity: 0.9;
 
-}
 .section-1 a{
   margin-left: 37.5%;
 }
+}
+
+
+.w{
+
+      margin: 150px auto;
+
+  }
+
+
+
+.q {
+  position:relative;
+  padding:0px;
+}
+.q .close {
+  position:absolute;
+  right:-50px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+ .v {
+	background-color: #1f1f1f;
+	padding-top: 74px;
+	padding-right: 30px;
+	padding-left: 30px;
+
+}
+.v h1{
+  font-family: "Avenir",sans-serif;
+  font-size: 37px;
+  color: white;
+  text-align: center;
+}
+input[type=email], input[type=password],input[type=ln],input[type=fn] {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: black;
+    border-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.9s;
+}
+input[type=email]:hover, input[type=password]:hover, input[type=fn]:hover,input[type=ln]:hover {
+	opacity: 1;
+	transition: all 0.9s;
+}
+::placeholder {
+	text-align: center;
+	font-family: "Avenir",sans-serif;
+	font-size: 20px;
+	color: #403f3f;
+
+}
+.pass h3{
+	font-family: "Avenir",sans-serif;
+	font-size: 21px;
+	color: #868686;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.form button {
+width: 100%;
+background-color: white;
+border-radius: 10px;
+}
+.btn h5{
+	font-family: "Avenir",sans-serif;
+	font-size: 18px;
+	color: #403f3f;
+	font-weight: bold;
+    cursor: pointer;
+    padding-top: 10px;
+
+
+}
+.account h4{
+	padding-top: 66px;
+	padding-bottom: 66px;
+	text-align: center;
+	font-size: 21px;
+	font-family: "Avenir",sans-serif;
+	color: #8d8d8d;
+	cursor: pointer;
+
+}
+.account h4 span{
+ color: white	}
+ .or h2 { 
+ 	width:100%;
+  text-align:center;
+
+   line-height:1px;
+    margin:10px 0 20px;
+    background-color: #3b3b3b; } 
+
+.or h2 span { 
+	background:#1f1f1f;
+ padding:0 10px;
+ color: #7a7a7a;
+ font-family: "Avenir",sans-serif; }
+
+ input,
+ .btn {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+/* add appropriate colors to fb, twitter and google buttons */
+ .fb {
+  background-color: #3B5998;
+  color: white;
+  margin-bottom: 61px;
+  border-radius: 10px;
+}
+.fb  h3{
+	text-align: center;
+	font-family: "Avenir"sans-serif;
+	font-size: 20px;
+	padding-top: 8px;
+
+}
+.fb .fa-facebook-official{
+	font-size:32px;
+	text-align: left;
+	float: left;
+	padding-top: 5px;
+}
+.fb .fa-facebook-official:hover{
+    
+	opacity: 1;
+	color: white;
+	background-color:blue;
+
+}
+.modal-dialog .close {
+	color: white;
+	
+
+}
+.dropdown {
+	position: relative;
+	display: inline;
+}
+.dropdown-menu {
+	 display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1
+}
+..dropdown-menu a{
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    opacity: 0.7;
+    transition: 0.9s;
+}
+.dropdown-menu a:hover 
+{background-color: #ddd;
+color: black;
+opacity: 1;
+transition: 0.9s;}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.model-pay .btn {
+	width: 60%;
+	background-color: red;
+	color: white;
+	font-family: "Avenir",sans-serif;
+	font-size: 15px;
+}
+
+.left-footer h2{
+	font-size: 18px;
+	text-align: center;
+	font-family: "Avenir",sans-serif;
+	color: white;
+}
+.left-footer h2 span{
+	font-size:30px;
+	font-weight: bold;
+	color: white;
+
+}
+
+.left-footer p{
+	
+	text-align: center;
+	font-size: 13px;
+	font-family: "Avenir",sans-serif;
+	color: #5e5e5e;
+}
+/*tabs*/
+.icon-container {
+  margin-bottom: 5px;
+  padding-left: 40px;
+  padding-right:40px;
+  font-size: 20px;
+}
+.icon-container i{
+	padding-left: 10px;
+}
+.icon-container .fa-cc-visa{
+	color:navy;
+}
+.text-5{
+	margin-top: -4px;
+}
+.text-5 p{
+	font-size: 18px;
+	font-family: "Avenir",sans-serif;
+	text-align: right;
+	color: #0a7da9;
+
+}
+.text-5 span{
+ cursor: pointer;
+ font-size: 22px;
+ color: #5e5e5e;
+}
+.text-6 {
+	font-family: "Avenir",sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	color: #4d4d4d;
+	font-weight: bold;
+}
+.fm {
+
+	margin-top: 10px;
+}
+.fm input[type=code]{
+    background-color: transparent;
+    border:1px solid #5e5e5e;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.9s;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    width: 100%;
+
+
+
+
+}
+.fm input[type=code]::placeholder{
+	text-align: left;
+	font-family: "Avenir",sans-serif;
+	color: #5e5e5e;
+	font-size: 15px;
+}
+.left-text a {
+	padding-left: 10px;
+	padding-top: 10px;
+	font-family: "Avenir",sans-serif;
+	font-size: 10px;
+	color: #5e5e5e;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+.phone p {
+	padding-top: 25px;
+	text-align: center;
+	font-size: 13px;
+	font-family: "Avenir",sans-serif;
+	color: #5e5e5e;
+
+
+
+}
+.phone p span{
+	font-size: 20px;
+}
+.phone {
+margin-top: 10px;
+
+
+}
+.con img{
+	height: 22px;
+	margin-top: -5px;
+	text-decoration: none;
+
+}
+.con{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Avenir",sans-serif;
+    color: #5e5e5e;
+  
+}
+
+
+/* Hide the browser's default radio button */
+.con input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    background-color:transparent;
+    border: 1px solid #5e5e5e;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.con:hover input ~ .checkmark {
+    background-color: transparent;
+}
+
+/* When the radio button is checked, add a blue background */
+.con input:checked ~ .checkmark {
+    background-color: transparent;
+    border:1px solid #5e5e5e;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.con input:checked ~ .checkmark:after {
+    display: block;
+}
+.con .checkmark:after {
+ 	top:6px;
+	left: 6px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: red;
+}
+.phone .btn {
+	background-color: transparent;
+	border: 1px solid #5e5e5e;
+	width: 100%;
+	
+}
+.phone .btn h5 {
+	color: #5e5e5e;
+	font-family: "Avenir",sans-serif;
+	font-size: 16px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+
+}
+.model-pay .btn {
+	width: 60%;
+	background-color: red;
+	color: white;
+	font-family: "Avenir",sans-serif;
+	font-size: 15px;
+}
+
+
+.form1-text {
+	padding-left:50px;
+	padding-right:50px;
+	padding-top: 20px;
+}
+.form-pay {
+	background-color: #202020;
+}
+.header1 h5 {
+	color: white;
+	font-family: "Avenir",sans-serif;
+	font-size: 15px;
+}
+.header1 h5 span{
+	color: #5e5e5e;
+}
+.button1 .btn {
+	background-color: red;
+	opacity: 0.9;
+}
+.button1 .btn:hover {
+	opacity: 1;
+}
+.button1 .btn h4 {
+	font-size: 18px;
+	padding-top: 5px;
+	color: white;
+	font-family: "Avenir",sans-serif;
+}
+.button2 {
+	margin-top: 10px;
+}
+
+.button2 .btn h4 {
+	font-size: 14px;
+	padding-top: 10px;
+	color: #9e9e9e;
+	font-family: "Avenir",sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.text-6 span{
+	color: white;
+	text-decoration: underline;
+}
+
+.card-icon a img {
+  height: 20px;
+  text-decoration: none;
 }
