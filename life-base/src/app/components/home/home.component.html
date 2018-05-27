@@ -31,10 +31,10 @@
         </ul>
         <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
             <li class="nav-item">
-                <a class="nav-link"  data-toggle="modal" data-target="#popUpWindow">LOGIN</a>
+                <a class="nav-link"  data-toggle="modal" data-target="#login">LOGIN</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="" style="background-color: #2a2a2a;color: #fff;border-color: #2a2a2a">REGISTER</a>
+                <a class="nav-link" data-toggle="modal" data-target="#register" href="" style="background-color: #2a2a2a;color: #fff;border-color: #2a2a2a">REGISTER</a>
             </li>
 
         </ul>
@@ -170,26 +170,18 @@
                 <a href="" class="fa fa-envelope-o"></a>
             </div>
             </div>
-            <div class="col-md-4 col-12 model-pay">
-       <br>
-                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal2">
-  ALL-ACCESS PASS
-</button>
-
-
-            </div>
         </div>
     </div>
 </div>
 
   
-  <div class="modal fade" id="popUpWindow">
+  <div class="modal fade" id="login">
     <div class="modal-dialog">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  
+      <div class="modal-content login">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      <div class="modal-content login">
-
         <h1>LOGIN</h1><br>
         <form>
   <div class="form-group">
@@ -198,16 +190,14 @@
          </a>
     <div class="or">
     <h2><span>OR</span></h2>
-</div>
-<div class="form-group">
-     <input type="fn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
+
 </div>
   <div class="form-group">
-    <input type="ln" class="form-control" id="exampleInputPassword1" placeholder="Last name">
+    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
   </div>
   <div class="form-group">
-    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email address">
-  </div>
+     <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password">
+</div>
 </div>
 
   <div class="row">
@@ -230,33 +220,32 @@
     </div>
   </div>
 
-   <div class="modal fade" id="popUpWindow4">
+   <div class="modal fade" id="register">
     <div class="modal-dialog">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     
+      <div class="modal-content login"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      <div class="modal-content login">
 
-        <h1>LOGIN</h1><br>
+        <h1>REGISTER</h1><br>
 
         <form>
-  <div class="form-group">
-     <hr style="background-color: #3b3b3b;">
-    <input type="fn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
 
+    <div class="form-group">
+      <hr style="background-color: #3b3b3b;">
+      <div class="form-group">
+    <input type="fn" class="form-control" id="exampleInputPassword1" placeholder="First name name">
+  </div>
   <div class="form-group">
     <input type="ln" class="form-control" id="exampleInputPassword1" placeholder="Last name">
   </div>
   <div class="form-group">
     <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email address">
   </div>
-    </div>
+</div>
   <div class="row">
-   <div class="col-md-6 pass">
-   <h3>Forgot your password?</h3><br>
-   </div>
    <div class="col-md-6">
-    <button type="submit" class="btn"><h5>LOGIN</h5></button>
+    <button type="submit" class="btn"><h5>REGISTER</h5></button>
    </div>
   </div>
  <hr style="background-color: #3b3b3b;margin-top: 51px;">
@@ -271,92 +260,3 @@
     </div>
   </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content form-pay">
-      <div class="modal-body form1-text">
-        <div class="row header1">
-          <div class="col-md-9 col-10">
-            <h5>All ACCESS PASS<br>
-        <span>ANNUAL SUBSCRIPTION ($180 YAR)</span> </h5>
-          </div>
-          <div class="col-md-3 col-2">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-          </div>
-        </div>
-         <hr style="background-color: #3b3b3b;margin-bottom: 0px;margin-top: 0px">
-  <hr style="background-color: #3b3b3b;margin-top: 10px;">
-     <div class="card-icon">
-      <a href="#"><img src="/assets/images/visa.png"></a>&nbsp;&nbsp;
-      <a href="#"><img src="/assets/images/master.png"></a>&nbsp;&nbsp;
-      <a href="#"><img src="/assets/images/amex.png"></a>&nbsp;&nbsp;
-      <a href="#"><img src="/assets/images/card1.png"></a>&nbsp;
-        </div>
-    <hr style="background-color: #3b3b3b;">
-
-        <div class="row">
-        <div class="col-md-8 col-9">
-         <label class="con">&nbsp;<img src="/assets/images/visa.png">&nbsp;&nbsp;&nbsp;&nbsp;XXXX 9565
-          <input type="radio" checked="checked" name="radio">
-          <span class="checkmark"></span>
-          </label>
-          </div>
-          <div class="col-md-4 col-3 text-5">
-          <p>4/5&nbsp;&nbsp;<span aria-hidden="true">&times;</span></p>
-        </div>
-        <div class="col-md-12 col-12">
-            <hr style="background-color: #3b3b3b;margin-top: 0px;">
-        </div>
-        <div class="col-md-12 col-12">
-         <label class="con">&nbsp;New card
-         <input type="radio" name="radio">
-        <span class="checkmark"></span>
-        </label>
-          <hr style="background-color: #3b3b3b;">
-      </div>
-      </div>
-      <p class="text-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span>Lorem</span> Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has<br></p>
-      <div class="button1">
-      <button type="button" class="btn"><h4>COMPLETE OREDER</h4></button>
-    </div>
-      <div class="row">
-    <div class="col-md-6 col-12 left-text">
-       <a href="#"><i class="fa fa-lock">&nbsp;&nbsp;</i>Secure with SSL</a>
-        </div>
-         <div class="col-md-6 col-12 left-text">
-      <a href="#">Satisfaction Guaranteed</a>
-        </div>
-    <div class="col-md-8 col-12">
-
-<form>
-  <div class="form-group fm">
- 
-    <input type="code" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Gift code">
-  </div>
-</form>
-    </div>
-    <div class="col-md-4 col-12 button2">
-      <button type="button" class="btn btn-dark"><h4>APPLY</h4></button>
-    </div>
-  </div>
-   <hr style="background-color: #3b3b3b;margin-bottom: 0px">
-    <hr style="background-color: #3b3b3b;margin-top: 8px;">
-     <div class="row">
-          <div class="col-md-6 col-12 left-footer">
-            <h2><span>100%</span><br>Guaranteed</h2 >
-          
-            <p>Lorem Ipsum is simply dummy <br>the printing and typesetting <br>Lorem Ipsum has been</p>
-          </div>
-          <div class="col-md-6 col-12 phone">
-           <button type="button" class="btn"><h5><i class="fa fa-lock"></i> &nbsp;| &nbsp;Secure with SSL</h5></button>
-            <p >Have a question?<br><span>1-999-999-9999</span></p>
-            
-          </div>
-        </div>
-      </div>
-  </div>
-</div>
-</div>

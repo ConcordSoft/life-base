@@ -215,40 +215,45 @@ opacity: 0.6;
 	margin-top: 74px;
 
 }
+
 .grid-image img {
 	display: block;
 	margin: auto;
 	margin-bottom: 60px;
-	opacity: 0.9;
-	transition: all 0.5s;
 	cursor: pointer;
+	opacity: 0.7;
+	transition: all 0.9s;
 
 }
 .grid-image img:hover {
 	opacity: 1;
+	transition: all 0.9s;
+}
+
+.grid-image-text{
+	position: absolute;
+	top: 80px;
+	left: 100px;
 
 }
 .grid-image-text img{
-	top: 80px;
-	position: absolute;
-	left: 100px;
-	height: 50px;
+	margin: 0px;
+	height: 40px;
 	cursor: pointer;
 
 }
 
 
 .grid-image-text  p{
-	top:140px;
-	left:100px;
-	position: absolute;
 	color: white;
 	font-size: 40px;
 	font-family: "Avenir",sans-serif;
 	font-weight: bold;
 	cursor: pointer;
+	padding-top: 10px;
 	
 }
+
 #flip {
 
     text-align: center;
@@ -623,19 +628,20 @@ opacity: 1;
 .grid {
 	padding-top: 74px;
 }
-
-.grid-image-text img{
-	top: 20px;
-	position: absolute;
+.grid-image-text {
 	left: 50px;
-	height: 30px
+	top: 30px;
+}
+.grid-image-text img{
+	
+	position: absolute;
+	height: 25px
 
 }
 
 .grid-image-text  p{
-	top:60px;
-	left:50px;
-	font-size: 25px;
+	font-size: 5vw;
+	padding-top:50px;
 	
 }
 /*end*/
@@ -750,7 +756,7 @@ opacity: 1;
 }
 /*end*/
 }
-@media(min-width: 768px) and (max-width: 991px){
+@media(min-width: 768px) and (max-width: 992px){
 	.modal-dialog .modal-content{
 	padding-left: 10px;
 	padding-right: 10px;
@@ -802,17 +808,18 @@ opacity: 1;
 .social{
 	text-align: center;
 }
+.grid-image-text{
+	top: 30px;
+	left: 80px;
+}
 .grid-image-text img{
-	top: 50px;
-	position: absolute;
-	left: 50px;
+	
+	margin: 0;
 	height: 40px
 
 }
 
 .grid-image-text  p{
-	top:100px;
-	left:50px;
 	font-size: 25px;
 	
 }
@@ -825,7 +832,7 @@ opacity: 1;
 }
 }
 
-@media(min-width: 991px) and (max-width: 1200px){
+@media(min-width: 992px) and (max-width: 1200px){
 	 .text-center .nav-item .nav-link{
 	color: #5e5e5e;
 	font-family : "Avenir Black",sans-serif ;
@@ -906,9 +913,9 @@ input[type=email], input[type=password],input[type=ln],input[type=fn] {
     box-sizing: border-box;
     background-color: black;
     border-color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
     cursor: pointer;
     opacity: 0.6;
     transition: all 0.9s;
@@ -920,13 +927,13 @@ input[type=email]:hover, input[type=password]:hover, input[type=fn]:hover,input[
 ::placeholder {
 	text-align: center;
 	font-family: "Avenir",sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	color: #403f3f;
 
 }
 .pass h3{
 	font-family: "Avenir",sans-serif;
-	font-size: 21px;
+	font-size: 15px;
 	color: #868686;
 	vertical-align: middle;
 	cursor: pointer;
@@ -935,19 +942,19 @@ input[type=email]:hover, input[type=password]:hover, input[type=fn]:hover,input[
 
 .btn h5{
 	font-family: "Avenir",sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	color: #403f3f;
 	font-weight: bold;
     cursor: pointer;
     padding-top: 10px;
-  
+
 
 }
 .account h4{
-	padding-top: 66px;
+	padding-top: 50px;
 	padding-bottom: 66px;
 	text-align: center;
-	font-size: 21px;
+	font-size: 15px;
 	font-family: "Avenir",sans-serif;
 	color: #8d8d8d;
 	cursor: pointer;
@@ -967,14 +974,14 @@ input[type=email]:hover, input[type=password]:hover, input[type=fn]:hover,input[
 	background:#1f1f1f;
  padding:0 10px;
  color: #7a7a7a;
- font-family: "Avenir",sans-serif; }
+ font-family: "Avenir",sans-serif;
+  }
 
  input,
  .btn {
   width: 100%;
   border: none;
   border-radius: 4px;
-  margin: 5px 0;
   opacity: 0.85;
   display: inline-block;
   text-decoration: none; /* remove underline from anchors */
@@ -989,21 +996,22 @@ input:hover,
  .fb {
   background-color: #3B5998;
   color: white;
-  margin-bottom: 61px;
-  border-radius: 10px;
+  margin-bottom: 40px;
+  border-radius: 5px;
 }
 .fb  h3{
 	text-align: center;
 	font-family: "Avenir"sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	padding-top: 8px;
 
 }
 .fb .fa-facebook-official{
-	font-size:32px;
+	font-size:27px;
 	text-align: left;
 	float: left;
-	padding-top: 5px;
+	padding-top: 4px;
+
 }
 .fb .fa-facebook-official:hover{
     
@@ -1014,6 +1022,18 @@ input:hover,
 }
 .modal-dialog .close {
 	color: white;
+	
+
+}
+.v .close {
+	 position:absolute;
+right: 10px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
 	
 
 }
@@ -1029,7 +1049,7 @@ input:hover,
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1
 }
-..dropdown-menu a{
+.dropdown-menu a{
 	color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -1045,11 +1065,13 @@ transition: 0.9s;}
 
 .dropdown:hover .dropdown-menu {
     display: block;
+    transition: 0.9s;
 
 }
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+    transition: 0.9s;
 }
 .model-pay .btn {
 	width: 60%;
@@ -1304,4 +1326,29 @@ margin-top: 10px;
 .card-icon a img {
   height: 20px;
   text-decoration: none;
+}
+.login {
+	background-color: #1f1f1f;
+	padding-top: 74px;
+	padding-right: 30px;
+	padding-left: 30px;
+
+}
+.login h1{
+  font-family: "Avenir",sans-serif;
+  font-size: 37px;
+  color: white;
+  text-align: center;
+}
+.login .close {
+	 position:absolute;
+right: 10px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+	
+
 }
