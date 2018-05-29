@@ -470,7 +470,10 @@ opacity: 1;
     background-color: #202020;
     margin-top: 20px;
     margin-bottom: 20px; 
+  
 }
+
+
 #show1 {
 	color: red;display: none;
 	color: #fff;
@@ -479,6 +482,7 @@ opacity: 1;
     padding-bottom: 50px;
     cursor: pointer;
     padding-top: 40px;
+
 }
 
 #panel1 {
