@@ -39,7 +39,7 @@ $(document).ready(function(){
     $("#show2").click(function(){
         $("#panel").fadeOut(1000);
         $("#show2").fadeOut();
-        $("#flip").fadeIn(9000);
+        $("#flip").fadeIn(5000);
        
 
     });
