@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, NgModule, OnInit} from '@angular/core';
 import * as $ from 'jquery';
 import axios from 'axios';
 
@@ -9,9 +9,7 @@ import axios from 'axios';
 })
 export class ChildComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+    ngOnInit() {
     $(document).ready(function(){
     $("#flip").click(function(){
        $("#flip").fadeOut();
@@ -51,9 +49,9 @@ $(document).ready(function(){
 
   //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
   function autoPlayYouTubeModal() {
-      var trigger = $("body").find('[data-toggle="modal"]');
+      let trigger = $("body").find('[data-toggle="modal"]');
       trigger.click(function () {
-          var theModal = $(this).data("target"),
+          let theModal = $(this).data("target"),
               videoSRC = $(this).attr("data-theVideo"),
               videoSRCauto = videoSRC + "?autoplay=1";
           $(theModal + ' iframe').attr('src', videoSRCauto);
@@ -66,7 +64,7 @@ $(document).ready(function(){
 
       document.getElementById('customButton').addEventListener('click', function(e) {
           e.preventDefault();
-          let data = {
+          let data = JSON.stringify({
               "idempotency_key": "13123g12hh13g2",
               "card_nonce": "fake-card-nonce-ok",
               "reference_id": "RPCE#12345 ",
@@ -91,20 +89,23 @@ $(document).ready(function(){
                   "amount": 5000,
                   "currency": "USD"
               }
-          };
-          let access_token = 'sandbox-sq0atb-iA6OCpBYVAx6qIMgzeiphw';
+          });
+          let access_token = JSON.stringify('sandbox-sq0atb-iA6OCpBYVAx6qIMgzeiphw');
           let location_id = 'CBASELGLAkFYiLCGR6VUt40QNwMgAQ';
-          axios.post('https://connect.squareup.com/v2/locations/'+location_id+'/transactions', data, {
+          let url = 'https://connect.squareup.com/v2/locations/'+location_id+'/transactions';
+          let token = 'Bearer '.concat(access_token);
+          axios.post(url, data, {
               headers: {
-                  'Content-Type': 'application/json',
-                  'Authorization': 'Bearer ' + access_token
+                  Accept: 'application/json',
+                  Authorization: token
               }})
               .then(response => {
                   console.log(response)
               })
               .catch(error => {
                   console.log(error);
-              })
+              });
+
       });
 
  
