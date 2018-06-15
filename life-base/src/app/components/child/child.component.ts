@@ -9,6 +9,19 @@ import axios from 'axios';
 })
 export class ChildComponent implements OnInit {
 
+  constructor() { 
+  }
+
+$(document).ready(function(){
+  
+
+    $("#show2").click(function(){
+        $("#panel").fadeOut(1000);
+        $("#show2").fadeOut();
+        $("#flip").fadeIn(9000);
+
+    });
+     $("#flip").click(function(){
     ngOnInit() {
     $(document).ready(function(){
     $("#flip").click(function(){
@@ -18,33 +31,23 @@ export class ChildComponent implements OnInit {
         
 
     });
-});
-$(document).ready(function(){
-    $("#show").click(function(){
+      $("#show3").click(function(){
         $("#panel1").slideToggle(1500);
         $("#show1").slideToggle(3000);
-        $("#show").fadeOut();
+        $("#show3").fadeOut();
 
     });
-});
-$(document).ready(function(){
-    $("#show1").click(function(){
+      $("#show1").click(function(){
         $("#panel1").fadeOut(1000);
         $("#show1").fadeOut();
-        $("#show").fadeIn(9000);
+        $("#show3").fadeIn(9000);
        
 
     });
-});
-$(document).ready(function(){
-    $("#show2").click(function(){
-        $("#panel").fadeOut(1000);
-        $("#show2").fadeOut();
-        $("#flip").fadeIn(9000);
-       
 
-    });
+ 
 });
+
   autoPlayYouTubeModal();
 
   //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
@@ -111,6 +114,5 @@ $(document).ready(function(){
  
   }
 
-  
-   
-}
+ 
+  }
