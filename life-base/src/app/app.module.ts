@@ -11,16 +11,16 @@ import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ChildComponent,
-    SonComponent,
-    HusbandComponent,
-    FatherComponent,
-    HomeComponent
+      AppComponent,
+      ChildComponent,
+      SonComponent,
+      HusbandComponent,
+      FatherComponent,
+      HomeComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+      BrowserModule,
+      AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

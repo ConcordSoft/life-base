@@ -433,7 +433,9 @@
       </div>
       <p class="text-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span>Lorem</span> Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has<br></p>
       <div class="button1">
-      <button type="button" class="btn"><h4>COMPLETE OREDER</h4></button>
+      <button id="customButton" type="button" class="btn">
+          <h4>COMPLETE OREDER</h4>
+      </button>
     </div>
       <div class="row">
     <div class="col-md-6 col-12 left-text">
@@ -511,21 +513,45 @@
       </div>
     </div>
   </div>
-  <div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
 
-  </div>
+<div id="sq-ccbox">
+    <!--
+      You should replace the action attribute of the form with the path of
+      the URL you want to POST the nonce to (for example, "/process-card")
+    -->
+    <form id="nonce-form" novalidate action="/process-card.php" method="post">
+        Pay with a Credit Card
+        <table>
+            <tbody>
+            <tr>
+                <td>Card Number:</td>
+                <td><div id="sq-card-number"></div></td>
+            </tr>
+            <tr>
+                <td>CVV:</td>
+                <td><div id="sq-cvv"></div></td>
+            </tr>
+            <tr>
+                <td>Expiration Date: </td>
+                <td><div id="sq-expiration-date"></div></td>
+            </tr>
+            <tr>
+                <td>Postal Code:</td>
+                <td><div id="sq-postal-code"></div></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="sq-creditcard" class="button-credit-card" onclick="requestCardNonce(event)">
+                        Pay with card
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!--
+          After a nonce is generated it will be assigned to this hidden input field.
+        -->
+        <input type="hidden" id="card-nonce" name="nonce">
+    </form>
 </div>
