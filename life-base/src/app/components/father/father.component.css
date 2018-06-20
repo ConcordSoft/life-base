@@ -47,34 +47,16 @@ opacity: 0.6;
 #section{
   background-color: black;
 }
-.section-1 {
-	background-image: url("/assets/images/father/image71.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100%;
-
-}
-.section-1 {
-	padding-top: 380px;
-}
-.video a img {
-	height: 120px;
-	display: block;
-	margin: auto;
-	opacity: 0.7;
-	transition: all 0.9s;
-}
-.video a img:hover {
-	opacity: 1;
-	transition: all 0.9s;
+#playVideo {
+	width: 100%;
+	height: 500px;
 }
 .section-1 h3 {
 	font-family: "Avenir",sans-serif;
 	color: #fff;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 111px;
+	padding-top: 50px;
 	font-size: 65px;
 }
 .section-1 p {
@@ -461,7 +443,7 @@ opacity: 1;
 	font-size: 30px;
 
 }
- #show {
+ #show3 {
     cursor: pointer;
     padding-top: 20px;
     text-align: center;
@@ -550,14 +532,8 @@ opacity: 1;
 .navbar-brand img{
 	height: 70px;
 }
-.section-1 {
-	padding-top: 310px;
-}
-.video a img {
-	display: block;
-	margin: auto;
-	height: 100px;
-	
+#playVideo {
+	height: 300px;
 }
 
 .section-1 p {
@@ -1353,4 +1329,19 @@ right: 10px;
   opacity:1;
 	
 
+}
+td {
+	font-family: "Avenir",sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #4d4d4d;
+	font-weight: bold;
+}
+#nonce-form h4 {
+	font-family: "Avenir",sans-serif;
+	font-size: 15px;
+	text-align: center;
+	color: white;
+	padding-bottom: 10px;
+	
 }
