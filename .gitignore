@@ -1,3 +1,10 @@
-#IDE
-.idea/
-/vendor/
+.idea
+/node_modules
+/coverage
+server.log
+/log
+/doc
+newrelic_agent.log
+build
+public/resources/vendor
+.history
