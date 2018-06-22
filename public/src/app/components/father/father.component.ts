@@ -126,7 +126,7 @@ export class FatherComponent implements OnInit {
   checkIfPayed() {
     this.courseName = this._router.url.substr(1).toLowerCase();
     this._UserService.checkIfPayedCourse(this.courseName).subscribe(payed => {
-      if (payed) {
+      if (payed == true) {
         this.payed = true;
       }
     }, error => {
