@@ -29,7 +29,7 @@ import {
 } from './_core/index';
 
 import {
-  UserService
+  UserService, PaymentService
 } from './_services/index';
 
 import {
@@ -81,6 +81,7 @@ export function httpServiceFactory(backend: XHRBackend, options: RequestOptions,
     HttpService,
     SessionService,
     UserService,
+    PaymentService,
     { provide: BrowserXhr, useClass: NgProgressBrowserXhr },
     {
       provide: HttpService,

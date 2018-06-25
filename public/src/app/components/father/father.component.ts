@@ -5,7 +5,7 @@ import {
 import * as $ from 'jquery';
 import axios from 'axios';
 import {
-  UserService
+  UserService, PaymentService
 } from './../../_services/index';
 import {
   SessionService
@@ -21,7 +21,8 @@ import {
 })
 export class FatherComponent implements OnInit {
 
-  constructor(private _UserService: UserService, private _SessionService: SessionService, private _router: Router) {}
+  constructor(private _UserService: UserService, private _SessionService: SessionService, private _router: Router,
+    private _PaymentService: PaymentService) {}
 
   ngOnInit() {
     $(document).ready(function () {
@@ -126,11 +127,17 @@ export class FatherComponent implements OnInit {
   checkIfPayed() {
     this.courseName = this._router.url.substr(1).toLowerCase();
     this._UserService.checkIfPayedCourse(this.courseName).subscribe(payed => {
-      if (payed) {
+      if (payed.found == true) {
         this.payed = true;
       }
     }, error => {
-      alert('Error checking if user payed for course');
+      if(error.status == 403) {
+        this._SessionService.destroy();
+	      this.signedIn = false;
+        // token expired
+      } else {
+        alert('Error checking if user payed for course');
+      }
     });
   }
 
@@ -161,6 +168,18 @@ export class FatherComponent implements OnInit {
     this._SessionService.destroy();
     this.signedIn = false;
     this.payed = false;
+  }
+
+  charge(cardNonce: string) {
+    this._PaymentService.charge(cardNonce, 100).subscribe(data => {
+      console.log('payment successfull, data is ', data);
+      this._UserService.addCourseToUser(this.courseName).subscribe(updatedSessionObject => {
+        this._SessionService.create(updatedSessionObject);
+        this.payed = true;
+      });
+    }, error => {
+      alert('Error paying for course');
+    });
   }
 
 }

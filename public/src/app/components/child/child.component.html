@@ -1,3 +1,4 @@
+<script type="text/javascript" src="https://js.squareup.com/v2/paymentform"></script>
 <nav class="navbar navbar-light navbar-expand-md bg-light">
   <div class="container">
     <a href="/" class="navbar-brand"><img src="/assets/images/navbar/logo.png"></a>
@@ -47,13 +48,13 @@
 <div id="section">
   <div class="container section-1">
 
-    <iframe id="playVideo" src="https://www.youtube.com/embed/_aZON_EOFIk?autoplay=1" frameborder="0"></iframe>
-
+    <iframe *ngIf="payed" id="playVideo" src="https://www.youtube.com/embed/_aZON_EOFIk?autoplay=1" frameborder="0"></iframe>
+    <h1 *ngIf="!payed">You have to subscribe to course to view video!</h1>
 
     <h3>CHILD</h3>
     <p>DR. MOLINA GOES DEEPER INTO THE<br>
       PRINCIPLES OF CHILDSHIP</p>
-    <div class="all-full">
+    <div class="all-full" *ngIf="!payed">
       <a href="" data-toggle="modal" data-target="#Checkout-Form">All Full Course Access</a>
     </div>
 
@@ -433,8 +434,8 @@
 				You should replace the action attribute of the form with the path of
 				the URL you want to POST the nonce to (for example, "/process-card")
 			  -->
-              <form id="nonce-form" novalidate action="/assets/sq_php/process-card.php" method="post">
-                Pay with a Credit Card
+              <form id="nonce-form" novalidate method="post">
+                <h1>Pay with a Credit Card</h1>
                 <table>
                   <tbody>
                   <tr>
@@ -474,7 +475,7 @@
                 <!--
 				  After a nonce is generated it will be assigned to this hidden input field.
 				-->
-                <input type="hidden" id="card-nonce" name="nonce">
+                <input type="hidden" #cardNonce id="card-nonce" name="nonce">
               </form>
             </div>
 
@@ -488,8 +489,8 @@
           Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
           of type and scrambled it to make a type specimen book. It has<br></p>
         <div class="button1">
-          <button id="customButton" type="button" class="btn">
-            <h4>COMPLETE OREDER</h4>
+          <button id="confirm_order_btn" disabled="disabled" type="button" class="btn" (click)="charge(cardNonce.value)">
+            <h4>COMPLETE ORDER</h4>
           </button>
         </div>
         <div class="row">

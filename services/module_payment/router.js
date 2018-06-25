@@ -4,63 +4,27 @@ var auth = require('../../middleware/authMiddleware');
 var router = express.Router();
 
 /**
- * @api {post} /user/register
- * Register
+ * @api {post} /payment/user/{userId}/charge
+ * Charge Course
  * @apiVersion 1.0.0
- * @apiName Register
- * @apiGroup User
- * @apiDescription Register new user
+ * @apiName Charge Course
+ * @apiGroup Payment
+ * @apiDescription Charge user credit card for course amount
  *
- * @apiParam (body){String} em User email
- * @apiParam (body){String} pw User password
- * @apiParam (body){String} fn User firstname
- * @apiParam (body){String} ln User last name
- *
+ * @apiParam (path){String} userId Id of the logged user
+ * 
+ * @apiParam (body){String} card_nonce Payment card nonce
+ * @apiParam (body){Number} amount Payment amount
  *
  * @apiSuccessExample Success-Response:
  *      HTTP/1.1 200
-        {
-            fn: 'Jelena',
-            ln: 'Ivezic',
-            em: 'email@yahoo.com',
-            _id: 5a609d2e0b945d3c86dad7aa,
-        }
- *
- * @apiUse internalError
- * @apiUse alreadyRegistered
- * @apiUse badRequest
- */
-router.post('/register', controller.register);
-
-/**
- * @api {post} /user/login
- * Login
- * @apiVersion 1.0.0
- * @apiName Login
- * @apiGroup User
- * @apiDescription User login - if email and password are valid get user data and token
- *
- * @apiParam (body){String} em User email
- * @apiParam (body){String} pw User password
- *
- * @apiSuccessExample Success-Response:
- *      HTTP/1.1 200
-        {
-            token: 'eyJ0eXZX......',
-            client: {
-                _id: '5a607c4ff99d12171236264e',
-                fn: 'Jelena',
-                ln: 'Ivezic',
-                em: 'jj_ivezic@yahoo.com',
-                pw: undefined
-            }
-        }
  *
  * @apiUse internalError
  * @apiUse notFound
- * @apiUse invalidCredentials
+ * @apiUse badRequest
+ * @apiUse notAllowed
  */
-router.post('/login', controller.login);
+router.post('/user/:userId/charge', auth.checkUserToken, controller.charge);
 
 logger.info('loaded PAYMENT routes');
 

@@ -53,7 +53,7 @@
     <h3>HUSBAND</h3>
     <p>DR. MOLINA GOES DEEPER INTO THE
       <br> PRINCIPLES OF HUSBANDSHIP</p>
-    <div class="all-full">
+    <div class="all-full" *ngIf="!payed">
       <a href="" data-toggle="modal" data-target="#Checkout-Form">All Full Course Access</a>
     </div>
   </div>
@@ -341,7 +341,7 @@
         </div>
         <hr style="background-color: #3b3b3b;">
 
-        <div class="row">
+        <div class="row" >
           <div class="col-md-12 col-12">
 
             <div id="sq-ccbox">
@@ -349,7 +349,7 @@
 				You should replace the action attribute of the form with the path of
 				the URL you want to POST the nonce to (for example, "/process-card")
 			  -->
-              <form id="nonce-form" novalidate action="/assets/sq_php/process-card.php" method="post">
+              <form id="nonce-form" novalidate method="post">
                 Pay with a Credit Card
                 <table>
                   <tbody>
@@ -387,10 +387,8 @@
                   </tbody>
                 </table>
 
-                <!--
-				  After a nonce is generated it will be assigned to this hidden input field.
-				-->
-                <input type="hidden" id="card-nonce" name="nonce">
+                <!-- After a nonce is generated it will be assigned to this hidden input field. -->
+                <input type="hidden" #cardNonce id="card-nonce" name="nonce">
               </form>
             </div>
 
@@ -408,8 +406,8 @@
           <br>
         </p>
         <div class="button1">
-          <button type="button" class="btn">
-            <h4>COMPLETE OREDER</h4>
+          <button id="confirm_order_btn" type="button" class="btn" disabled="disabled" (click)="charge(cardNonce.value)">
+            <h4>COMPLETE ORDER</h4>
           </button>
         </div>
         <div class="row">
