@@ -56,6 +56,7 @@
     "request-validator": "^0.3.3",
     "restler-q": "^0.1.1",
     "serve-index": "~1.7.2",
+    "square-connect": "^2.8.0",
     "stripe": "^5.8.0",
     "uuid": "^3.1.0",
     "validator": "^9.1.2",
