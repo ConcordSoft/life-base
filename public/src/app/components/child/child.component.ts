@@ -29,8 +29,6 @@ export class ChildComponent implements OnInit {
 
   ngOnInit() {
 
-    var self = this;
-
     $(document).ready(function () {
 
 
@@ -105,7 +103,7 @@ export class ChildComponent implements OnInit {
     //             this._UserService.addCourseToUser(this.courseName).subscribe(responseStatus => {
     //   this.payed = true;
     // }, error => {
-    //   alert('Error adding course to user');
+    //   console.log('Error adding course to user');
     // });
     //         })
     //         .catch(error => {
@@ -143,7 +141,7 @@ export class ChildComponent implements OnInit {
         this.signedIn = false;
         // token expired
       } else {
-        alert('Error checking if user payed for course');
+        console.log('Error checking if user payed for course');
       }
     });
   }
@@ -156,7 +154,7 @@ export class ChildComponent implements OnInit {
       console.log('registered and logged in');
       this.signedIn = true;
     }, error => {
-      alert('Error registering user ' + this.user);
+      console.log('Error registering user ' + this.user);
     });
   }
 
@@ -167,7 +165,7 @@ export class ChildComponent implements OnInit {
       console.log('logged in');
       this.signedIn = true;
     }, error => {
-      alert('Error loggin in user ' + this.user);
+      console.log('Error loggin in user ' + this.user);
     });
   }
 
@@ -185,7 +183,7 @@ export class ChildComponent implements OnInit {
         this.payed = true;
       });
     }, error => {
-      alert('Error paying for course');
+      console.log('Error paying for course');
     });
   }
 

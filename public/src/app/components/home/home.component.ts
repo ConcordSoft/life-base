@@ -74,7 +74,7 @@ export class HomeComponent implements OnInit {
       console.log('registered and logged in');
       this.signedIn = true;
     }, error => {
-      alert('Error registering user' + this.user);
+      console.log('Error registering user' + this.user);
     });
   }
 
@@ -85,7 +85,7 @@ export class HomeComponent implements OnInit {
       console.log('logged in');
       this.signedIn = true;
     }, error => {
-      alert('Error loggin in user' + this.user);
+      console.log('Error loggin in user' + this.user);
     });
   }
 
