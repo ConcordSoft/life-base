@@ -1,7 +1,7 @@
 {
-  "name": "TradeIt",
+  "name": "Lifebase",
   "version": "0.2.0",
-  "description": "Server for the TradeIt app",
+  "description": "Server for the Lifebase site",
   "main": "server.js",
   "scripts": {
     "start": "nodemon --ignore public/",
@@ -15,13 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://laslohorvat@bitbucket.org/"
+    "url": "https://github.com/ConcordSoft/life-base"
   },
   "keywords": [
-    "trade",
-    "exchange"
+    "lifebase"
   ],
-  "author": "Hyperether",
+  "author": "ConcordSoft",
   "license": "ISC",
   "dependencies": {
     "@agm/core": "^1.0.0-beta.2",
