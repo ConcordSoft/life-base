@@ -35,15 +35,15 @@ var paymentForm = new SqPaymentForm({
       fontSize: '.9em'
   }],
 
-  // Initialize Apple Pay placeholder ID
-  applePay: {
-    elementId: 'sq-apple-pay'
-  },
+  // // Initialize Apple Pay placeholder ID
+  // applePay: {
+  //   elementId: 'sq-apple-pay'
+  // },
 
-  // Initialize Masterpass placeholder ID
-  masterpass: {
-    elementId: 'sq-masterpass'
-  },
+  // // Initialize Masterpass placeholder ID
+  // masterpass: {
+  //   elementId: 'sq-masterpass'
+  // },
 
   // Initialize the credit card placeholders
   cardNumber: {

@@ -25,7 +25,8 @@ export class SonComponent implements OnInit {
     private _PaymentService: PaymentService) {}
 
   ngOnInit() {
-
+    var self = this;
+    
     $(document).ready(function () {
 
 
@@ -53,7 +54,11 @@ export class SonComponent implements OnInit {
         $("#show1").fadeOut();
         $("#show3").fadeIn(9000);
 
+      });
 
+      $("#confirm_order_btn").off('click').on('click', function(){
+        var nonce = document.getElementById('card-nonce');
+        self.charge(nonce['defaultValue']);
       });
 
     });

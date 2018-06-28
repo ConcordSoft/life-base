@@ -2,7 +2,7 @@ import {
   Component,
   NgModule,
   OnInit,
-  AfterViewInit
+  AfterViewInit,
 } from '@angular/core';
 import * as $ from 'jquery';
 import axios from 'axios';
@@ -25,12 +25,14 @@ import {
 export class ChildComponent implements OnInit {
 
   constructor(private _UserService: UserService, private _SessionService: SessionService, private _router: Router,
-    private _PaymentService: PaymentService) {}
+    private _PaymentService: PaymentService) {
+
+    }
+
 
   ngOnInit() {
-
+    var self = this;
     $(document).ready(function () {
-
 
       $("#show2").click(function () {
         $("#panel").fadeOut(1000);
@@ -57,6 +59,11 @@ export class ChildComponent implements OnInit {
         $("#show3").fadeIn(9000);
 
 
+      });
+
+      $("#confirm_order_btn").off('click').on('click', function(){
+        var nonce = document.getElementById('card-nonce');
+        self.charge(nonce['defaultValue']);
       });
 
     });

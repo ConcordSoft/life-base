@@ -25,8 +25,9 @@ export class FatherComponent implements OnInit {
     private _PaymentService: PaymentService) {}
 
   ngOnInit() {
-    $(document).ready(function () {
+    var self = this;
 
+    $(document).ready(function () {
 
       $("#show2").click(function () {
         $("#panel").fadeOut(1000);
@@ -52,7 +53,12 @@ export class FatherComponent implements OnInit {
         $("#show1").fadeOut();
         $("#show3").fadeIn(9000);
 
+      
+      });
 
+      $("#confirm_order_btn").off('click').on('click', function(){
+        var nonce = document.getElementById('card-nonce');
+        self.charge(nonce['defaultValue']);
       });
 
     });
